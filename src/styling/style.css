@@ -1,0 +1,702 @@
+.text-red {
+  color: red;
+}
+
+.text-green {
+  color: green;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.coin {
+  border: solid red 1px;
+}
+
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-animation: opening 1s ease-in-out;
+          animation: opening 1s ease-in-out;
+}
+
+.landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  background-color: white;
+}
+
+.landing-page .content {
+  width: 80%;
+  max-width: 120rem;
+  min-width: 80rem;
+}
+
+.landing-page .content__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.landing-page .content__intro__welcome {
+  font-size: 2.3rem;
+}
+
+.landing-page .content__intro__p {
+  font-size: 1.5rem;
+}
+
+.landing-page .content__search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.landing-page .content__search-bar__title {
+  font-size: 1.5rem;
+}
+
+.landing-page .content__search-bar__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border: solid black 3px;
+  border-radius: 100%;
+  background-color: transparent;
+  outline: none;
+  display: none;
+}
+
+.landing-page .content__search-bar__button img {
+  width: 70%;
+  padding-bottom: 0.5rem;
+}
+
+.login-page {
+  height: 50vh;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-page .container {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 35%;
+  min-width: 35rem;
+  max-width: 40rem;
+  height: 33%;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.3rem;
+}
+
+.login-page .container__h1 {
+  font-size: 3rem;
+}
+
+.login-page .container__form {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7rem;
+}
+
+.login-page .container__form__label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.login-page .container__form__label input {
+  font-size: 1.7rem;
+}
+
+.login-page .container__form__login-button {
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
+}
+
+.login-page p {
+  font-size: 1.3rem;
+}
+
+.signup-page {
+  height: 50vh;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup-page .container {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 35%;
+  min-width: 35rem;
+  max-width: 40rem;
+  height: 33%;
+  min-height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.3rem;
+}
+
+.signup-page .container__h1 {
+  font-size: 3rem;
+}
+
+.signup-page .container__form {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7rem;
+}
+
+.signup-page .container__form__label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signup-page .container__form__label input {
+  font-size: 1.7rem;
+}
+
+.signup-page .container__form__login-button {
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
+}
+
+.signup-page p {
+  font-size: 1.3rem;
+}
+
+.forgot-password-page {
+  height: 50vh;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forgot-password-page .container {
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  width: 35%;
+  min-width: 35rem;
+  max-width: 40rem;
+  height: 33%;
+  min-height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.3rem;
+}
+
+.forgot-password-page .container__h1 {
+  font-size: 3rem;
+}
+
+.forgot-password-page .container__form {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.7rem;
+}
+
+.forgot-password-page .container__form__label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.forgot-password-page .container__form__label input {
+  font-size: 1.7rem;
+}
+
+.forgot-password-page .container__form__login-button {
+  font-size: 1.7rem;
+  padding: 0 0.5rem;
+}
+
+.forgot-password-page p {
+  font-size: 1.3rem;
+}
+
+.crypto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #f1f1f1;
+}
+
+.crypto-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.crypto-container .row__crypto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crypto-container .row__crypto__img {
+  width: 15%;
+  padding: 0.6rem;
+}
+
+.crypto-container .row__crypto__name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.crypto-container .row__crypto__name {
+  margin: 0 1rem;
+}
+
+.crypto-container .row__crypto__abbreviation {
+  font-size: 1.3rem;
+}
+
+.crypto-container .row__graph-container {
+  width: 15rem;
+}
+
+.crypto-container .row__graph-container .graph {
+  width: 100%;
+}
+
+.crypto-container .row__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 1.7rem;
+}
+
+.private-crypto-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.private-crypto-list__inner-container {
+  width: 80%;
+  max-width: 120rem;
+  min-width: 80rem;
+}
+
+.private-crypto-list__inner-container .coin-list {
+  border: 2px solid #f1f1f1;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link {
+  text-decoration: none;
+  border: none;
+  color: black;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin:hover .private-coin__delete-icon__img {
+  display: block;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin {
+  border-bottom: 2px solid #f1f1f1;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__icon {
+  width: 15%;
+  padding: 0.6rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__name {
+  font-size: 2.5rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__container2 {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__container3 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__name {
+  margin: 0 1rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__abbreviation {
+  font-size: 1.3rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__current-price {
+  font-size: 1.7rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__price-change-24 {
+  font-size: 1.3rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__delete-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1rem;
+  margin-right: 1.5rem;
+}
+
+.private-crypto-list__inner-container .coin-list .private-coin-link .private-coin__delete-icon__img {
+  border-radius: 50%;
+  display: none;
+  width: 100%;
+}
+
+.coin-detail-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.coin-detail-page .chart-container {
+  width: 90%;
+  height: 50%;
+}
+
+.coin-detail-page .chart-container canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 55px;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__logo {
+  color: black;
+  padding: 15px 0;
+  text-decoration: none;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 2.5rem;
+}
+
+.navbar__burger {
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+}
+
+.navbar__burger .line {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  -webkit-transform-origin: 1px;
+          transform-origin: 1px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: black;
+}
+
+.navbar__burger .nav-open {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.navbar__burger .nav-open:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(9px);
+          transform: rotate(45deg) translateY(9px);
+}
+
+.navbar__burger .nav-open:nth-child(2) {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  opacity: 0;
+}
+
+.navbar__burger .nav-open:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-9px);
+          transform: rotate(-45deg) translateY(-9px);
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,76 @@
+.private-crypto-list {
+  display: flex;
+  justify-content: center;
+  &__inner-container {
+    width: 80%;
+    max-width: 120rem;
+    min-width: 80rem;
+    .coin-list {
+      border: 2px solid #f1f1f1;
+      .private-coin-link {
+        text-decoration: none;
+        border: none;
+        color: $overal-text-color;
+        .private-coin:hover .private-coin__delete-icon__img {
+          display: block;
+        }
+        .private-coin {
+          border-bottom: 2px solid #f1f1f1;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          &__icon {
+            width: 15%;
+            padding: 0.6rem;
+          }
+          &__name {
+            font-size: 2.5rem;
+          }
+          &__container1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+          }
+          &__container2 {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          &__container3 {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          &__name {
+            margin: 0 1rem;
+          }
+          &__abbreviation {
+            font-size: 1.3rem;
+          }
+          &__current-price {
+            font-size: 1.7rem;
+          }
+          &__price-change-24 {
+            font-size: 1.3rem;
+          }
+          &__delete-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1rem;
+            margin-right: 1.5rem;
+            &__img {
+              border-radius: 50%;
+              display: none;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

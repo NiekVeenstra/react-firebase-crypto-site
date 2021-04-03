@@ -1,0 +1,50 @@
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $overal-text-color;
+  background-color: $overal-background-color;
+  .content {
+    width: 80%;
+    max-width: 120rem;
+    min-width: 80rem;
+    &__intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      &__welcome {
+        font-size: 2.3rem;
+      }
+      &__p {
+        font-size: 1.5rem;
+      }
+    }
+    &__search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem 0;
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border: solid black 3px;
+        border-radius: 100%;
+        background-color: transparent;
+        outline: none;
+        display: none;
+        img {
+          width: 70%;
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
