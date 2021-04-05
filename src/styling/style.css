@@ -73,6 +73,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .landing-page .content__intro__welcome {
@@ -122,6 +124,14 @@ body {
 .landing-page .content__search-bar__button img {
   width: 70%;
   padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 1050px) {
+  .landing-page .content {
+    border: solid red 1px;
+    width: 50%;
+    min-width: 50rem;
+  }
 }
 
 .login-page {
@@ -397,6 +407,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: 2px solid #f1f1f1;
+  border: solid #00807a 1px;
 }
 
 .crypto-container .row {
@@ -411,6 +422,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 80%;
+  border: solid green 1px;
 }
 
 .crypto-container .row__crypto {

@@ -14,6 +14,7 @@
       justify-content: center;
       align-items: center;
       padding: 1rem;
+      flex-wrap: wrap;
       &__welcome {
         font-size: 2.3rem;
       }
@@ -45,6 +46,17 @@
           padding-bottom: 0.5rem;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .landing-page {
+    .content {
+      border: solid red 1px;
+      width: 50%;
+      // max-width: 100rem;
+      min-width: 50rem;
     }
   }
 }
