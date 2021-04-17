@@ -1,8 +1,10 @@
+// imports
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import CoinData from "../components/crypto-details-component/CoinData";
 import HistoryChart from "../components/crypto-details-component/HistoryChart";
 import coinGecko from "../apis/coinGecko";
+
 
 const CoinDetailPage = () => {
     const { id } = useParams();
